@@ -1,5 +1,5 @@
-import plumber from 'gulp-plumber'
-import notify from 'gulp-notify'
+import plumber from 'gulp-plumber';
+import notify from 'gulp-notify';
 
 export default () => {
   return plumber({
@@ -8,5 +8,5 @@ export default () => {
       message: '<%= error.message %>',
       sound: true,
     })
-  })
+  });
 }

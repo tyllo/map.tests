@@ -1,3 +1,3 @@
-import gulp from 'gulp'
+import gulp from 'gulp';
 
-gulp.task('default', ['build', 'watch'])
+gulp.task('default', ['clean', 'webpack', 'connect']);
