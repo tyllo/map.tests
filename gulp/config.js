@@ -1,11 +1,26 @@
-import paths from './paths'
+import { debug, develope, production } from './helpers/getArg';
 
-import jade from './config/jade'
+var src = './src';
+var dest = production ? './build' : './dist';
 
 export default {
-  src:     paths.src,
-  dest:    paths.dest,
-  assets:  paths.assets,
+  src: src,
+  dest: dest,
+  modules: src,
 
-  jade:    jade,
-}
+  assets: {
+    images: 'assets/images',
+    scripts: 'assets/scripts',
+    styles: 'assets/styles',
+    fonts: 'assets/fonts',
+  },
+
+  isProduction: production,
+  isDevelope: develope,
+  isDebug: debug,
+  NODE_ENV: production ? 'production' : 'develope',
+
+  server: {
+    port: 8080,
+  },
+};

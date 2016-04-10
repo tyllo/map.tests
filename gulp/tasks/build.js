@@ -1,3 +1,3 @@
-import gulp from 'gulp'
+import gulp from 'gulp';
 
-gulp.task('build', ['jade'])
+gulp.task('build', ['clean', 'webpack']);
