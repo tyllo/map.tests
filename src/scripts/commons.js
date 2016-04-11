@@ -9,6 +9,7 @@ import 'leaflet-plugins/layer/tile/Yandex.js';
 import 'leaflet-easybutton';
 import 'leaflet-easybutton/src/easy-button.css';
 
+import 'es6-promise';
 import 'fetch-polyfill';
 
 export { L };

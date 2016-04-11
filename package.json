@@ -9,6 +9,7 @@
     }
   ],
   "dependencies": {
+    "es6-promise": "^3.1.2",
     "fetch-polyfill": "^0.8.2",
     "ionicons": "^3.0.0-alpha.3",
     "leaflet-plugins": "^1.5.3"
